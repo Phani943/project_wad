@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBuy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="header" id="home">
+        <nav class="nav-bar">
+            <img src="logo.jpg" width="100px" height="100px">
+            <p>MediBuy</p>
+            <ul>
+                <li><i class="fa fa-home"></i><a href="home"> Home</a></li>
+                <li><i class="fa fa-stethoscope"></i><a href="#medicine">  Medicine</a></li>
+                <li><i class="fa fa-heartbeat"></i><a href="#labtest">  Lab Tests</a></li>
+                <li><i class="fa fa-user-md"></i><a href="#doctor">  Talk with Doctor</a></li>
+                <li><i class="fa fa-phone"></i><a href="#contact">  Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="butt">
+            <button><a href="login.html">Login</a></button>
+            <button><a href="signup.html">Sign Up</a></button>
+        </div>
+        <div class="scroll-holder">
+        <div class="scroll">
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+            <div class="scroll-content">
+                <img src="medicine.jpg" width="200px" height="200px" title="Medicine">
+                <p>Medicine</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="footer">About us
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id culpa modi exercitationem error aliquid at, odio iusto repellat ut excepturi similique quibusdam illum suscipit qui voluptatem ad. Ad, in quo.</p>
+    </section>
+    <script>
+        const scroll = document.querySelector('.scroll');
+const scrollContent = document.querySelector('.scroll-content');
+let scrollWidth = scrollContent.offsetWidth;
+
+scroll.style.transform = `translateX(${scrollWidth}px)`;
+
+setInterval(() => {
+    scrollWidth -= 1;
+    scroll.style.transform = `translateX(${scrollWidth}px)`;
+
+    if (scrollWidth <= -scrollContent.offsetWidth) {
+        scrollWidth = scrollContent.offsetWidth;
+    }
+}, 20);
+    </script>
+</body>
+</html>
